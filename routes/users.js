@@ -17,4 +17,8 @@ router.post("/user/signup", usersController.postAddUser);
 router.post("/user/logout", usersController.logout);
 router.post("/user/log-workout", userLogsController.postUserLog);
 
+router.get("/privacy-policy", (req, res, next) => {
+  res.render("privacy-policy");
+});
+
 module.exports = router;
